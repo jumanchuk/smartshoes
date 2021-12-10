@@ -14,7 +14,6 @@ const CheckOut = () => {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const {cart,total} = useContext(Context);
-    const {completed,setCompleted} = useContext(Context);
 
     const PlaceOrder = async () => {
         debugger;
@@ -78,7 +77,7 @@ const CheckOut = () => {
 
   return (
     <>  
-    <div className="container" style={{padding: '50px'}} hidden = {completed} >
+    <div className="container" style={{padding: '50px'}} >
         <h1 className="mb-5">Almost done! 😁🙌 Complete to place the Order:</h1>
         <Form>
             <Form.Group className="mb-3" controlId="Form.Name">
